@@ -122,7 +122,8 @@ body{
 .homepage-card3-down{
     // border: 1px solid indigo;
     height: 610px;
-    overflow-y: scroll;
+    // position:relative;
+    overflow:scroll;
 }
 
 .homepage-card3-down>div{
