@@ -1,15 +1,24 @@
 import React from 'react'
-import { Link } from 'react-router'
+import { Link } from 'react-router-dom'
+import "./Sidebar.scss"
+import { BsSearch } from "react-icons/bs";
+import { BsFillChatSquareTextFill } from "react-icons/bs";
+import { BsUpload } from "react-icons/bs";
+import { BsFillCameraVideoFill } from "react-icons/bs";
+import { BsPersonLinesFill } from "react-icons/bs";
+import logo1 from "../logo2.png"
 
 export const Sidebar = () => {
   return (
     <div id='sidebar'>
-      <Link to="/home"><img src="" alt="" /></Link>
-      <Link to="/search"><button>Search</button></Link>
-      <Link to="/chats"><button>Chats</button></Link>
-      <Link to="/upload"><button>Upload</button></Link>
-      <Link to="/videos"><button>Videos</button></Link>
-      <Link to="/account"><button>Account</button></Link>
+      <div><Link to="/home"><div className='sidebar-logo'><h4>Vibe   <span className='n'>n</span>    Chat</h4></div></Link></div>
+      <div className='sidebar-content'>
+      <Link to="/search"><div className='sidebar-search'><BsSearch /></div></Link>
+      <Link to="/chats"><div className='sidebar-chats'><BsFillChatSquareTextFill/></div></Link>
+      <Link to="/upload"><div className='sidebar-upload'>< BsUpload/></div></Link>
+      <Link to="/videos"><div className='sidebar-videos'>< BsFillCameraVideoFill/></div></Link>
+      </div>
+      <div><Link to="/account"><div className='sidebar-account'><button><BsPersonLinesFill /></button></div></Link></div>
     </div>
   )
 }
