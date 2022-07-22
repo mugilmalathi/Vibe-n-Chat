@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
 .video{
     height: 600px;
     width: 100%;
@@ -12,10 +14,10 @@
     position: absolute;
     margin-top: -760px;
     height: 320px;
-   
+   font-weight: bolder;
     margin-left: 80px;
     font-size: 160px;
-    font-family: "Lucida Console", "Courier New", monospace;
+    font-family: 'Alfa Slab One', cursive;
   color: white;
   
 
@@ -24,9 +26,11 @@
     position: absolute;
     margin-top: -450px;
     height: 320px;
-    
-    margin-left: 450px;
+    font-weight: bolder;
+    margin-left: 250px;
+    // text-align: center;
     font-size: 160px;
+    font-family: 'Alfa Slab One', cursive;
     // font-family: "Lucida Console", "Courier New", monospace;
   color: white;
 }

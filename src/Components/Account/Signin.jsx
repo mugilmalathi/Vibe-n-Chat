@@ -15,6 +15,7 @@ import {
   Input,
   FormLabel,
 } from "@chakra-ui/react";
+import Signup from "./Signup";
 
 const Signin = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -24,13 +25,12 @@ const Signin = () => {
 
   return (
     <div>
-      <Link to="/">
+      {/* <Link to="/">
         <button>Home</button>
-      </Link>
+      </Link> */}
 
       <div>
-        <Button onClick={onOpen}>Signin</Button>
-
+        <Button className="signinbutton" onClick={onOpen}>Signin</Button>
         <Modal
           initialFocusRef={initialRef}
           finalFocusRef={finalRef}
@@ -46,7 +46,6 @@ const Signin = () => {
                 <FormLabel style={{ paddingTop: "18px" }}>Mail-Id</FormLabel>
                 <Input
                   ref={initialRef}
-                  id="name"
                   type="text"
                   placeholder="Enter your Mail-Id"
                   // onChange={}
@@ -57,7 +56,6 @@ const Signin = () => {
                 <FormLabel style={{ paddingTop: "18px" }}>Password</FormLabel>
                 <Input
                   ref={initialRef}
-                  id="hospital"
                   type="text"
                   placeholder="Create Password"
                   // onChange={}
@@ -66,6 +64,9 @@ const Signin = () => {
               </FormControl>
             </ModalBody>
 
+            <Signup />
+
+            
             <ModalFooter>
               <Button colorScheme="blue" ml={5}>
                 Sign In

@@ -10,7 +10,6 @@ const HomeAnimation = () => {
   return (
     <div className='video' onClick={()=>{
       navigate("home")
-
     }}>
       <video src={video} type="video/mp4" autoPlay loop muted></video>
       <div className='btm'>
@@ -18,7 +17,7 @@ const HomeAnimation = () => {
       <Typewriter
      
       options={{
-        strings: ["Welcome"],
+        strings: ["Welcome to"],
         autoStart: true,
         loop: true,
         deleteSpeed: 50,
@@ -31,7 +30,7 @@ const HomeAnimation = () => {
       <Typewriter
      
      options={{
-       strings: ["Chat n Vibe"],
+       strings: ["Vibe n Chat"],
        autoStart: true,
        loop: true,
        deleteSpeed: 50,

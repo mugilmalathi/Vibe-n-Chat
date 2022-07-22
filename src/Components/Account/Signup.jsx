@@ -25,17 +25,11 @@ const Signup = () => {
 
   return (
     <div>
-      <Link to="/">
-        <button>Home</button>
-      </Link>
 
       <div>
-        <Button
-          onClick={onOpen}
-          // onClickCapture={handleSubmitter}
-        >
-          Signup
-        </Button>
+
+      <p onClick={onOpen}>Don't have account? <span>Click here</span></p>
+        
         {/* <Button ml={4} ref={finalRef}>
         Hospital
       </Button> */}
@@ -100,7 +94,7 @@ const Signup = () => {
             </ModalBody>
 
             <ModalFooter>
-              <Link to={'/signin'}><Button colorScheme="blue" ml={5}>
+              <Link to={'/'}><Button colorScheme="blue" ml={5}>
                 Sign Up
               </Button></Link>
             </ModalFooter>
