@@ -4,7 +4,7 @@
     width: 100%;
     height: 100vh;
     box-sizing: border-box;
-    border: 1px solid gray;
+    // border: 1px solid gray;
 }
 
 .sidebar-logo{
@@ -15,7 +15,8 @@
     // align-items: center;
     font-weight: bolder;
     // border: 1px solid gray;
-    background: linear-gradient(360deg, #ff2121 0%, #f1afaf 50%, #f50000 100%)
+    background-color: #ee991b;
+    // background: linear-gradient(360deg, #ff2121 0%, #f1afaf 50%, #f50000 100%)
 }
 
 .sidebar-logo h4{
@@ -39,10 +40,13 @@
 .sidebar-content{
     width: 100%;
     height: 510px;
-    // border: 1px solid gray;
+    border: 1px solid white;
+    border-left: none;
+    border-right: none;
     justify-content: space-around;
     display: flex;
     flex-direction: column;
+    background-color: #ee991b;
     // box-shadow: rgba(235, 235, 249, 0.25) 0px 50px 100px -20px, rgba(210, 231, 255, 0.3) 0px 30px 60px -30px, rgba(147, 196, 244, 0.35) 0px -2px 6px 0px inset;
 }
 
@@ -52,13 +56,15 @@
     text-align: center;
     align-items: center;
     font-weight: bolder;
-    padding-left: 32px;
-    padding-top: 30px;
+    padding-left: 28px;
+    padding-top: 28px;
     font-size: 30px;
     margin-left: 50px;
     border-radius: 50%;
     margin-left: 70px;
-    box-shadow: rgba(0, 0, 255, 0.25) 0px 50px 100px -20px, rgba(0, 119, 255, 0.3) 0px 30px 60px -30px, rgba(0, 128, 255, 0.35) 0px -2px 6px 0px inset;
+    border: 5px solid white;
+    color: white;
+    // box-shadow: rgba(0, 0, 255, 0.25) 0px 50px 100px -20px, rgba(0, 119, 255, 0.3) 0px 30px 60px -30px, rgba(0, 128, 255, 0.35) 0px -2px 6px 0px inset;
 
     // >img{
     //     height: 40px;
@@ -70,7 +76,8 @@
 }
 
 .sidebar-search:hover{
-    background-color: rgb(82, 200, 251);
+    background-color: white;
+    color: #ee991b;
     transition: 1s;
     transform: rotateX(360deg);
 }
@@ -81,18 +88,21 @@
     text-align: center;
     align-items: center;
     font-weight: bolder;
-    padding-left: 32px;
-    padding-top: 30px;
+    padding-left: 28px;
+    padding-top: 28px;
     font-size: 30px;
     font-weight: bolder;
     margin-left: 50px;
     border-radius: 50%;
     margin-left: 70px;
-    box-shadow: rgba(253, 56, 69, 0.25) 0px 50px 100px -20px, rgba(255, 42, 42, 0.3) 0px 30px 60px -30px, rgba(255, 74, 74, 0.35) 0px -2px 6px 0px inset;
+    border: 5px solid white;
+    color: white;
+    // box-shadow: rgba(253, 56, 69, 0.25) 0px 50px 100px -20px, rgba(255, 42, 42, 0.3) 0px 30px 60px -30px, rgba(255, 74, 74, 0.35) 0px -2px 6px 0px inset;
 }
 
 .sidebar-chats:hover{
-    background-color: #d92500;
+    background-color: white;
+    color: #ee991b;
     transition: 1s;
     transform: rotateX(360deg);
 }
@@ -103,18 +113,21 @@
     text-align: center;
     align-items: center;
     font-weight: bolder;
-    padding-left: 32px;
-    padding-top: 30px;
+    padding-left: 28px;
+    padding-top: 28px;
     font-size: 30px;
     font-weight: bolder;
     margin-left: 50px;
     margin-left: 70px;
     border-radius: 50%;
-    box-shadow: rgba(15, 255, 243, 0.25) 0px 50px 100px -20px, rgba(57, 255, 212, 0.3) 0px 30px 60px -30px, rgba(54, 252, 203, 0.35) 0px -2px 6px 0px inset;
+    border: 5px solid white;
+    color: white;
+    // box-shadow: rgba(15, 255, 243, 0.25) 0px 50px 100px -20px, rgba(57, 255, 212, 0.3) 0px 30px 60px -30px, rgba(54, 252, 203, 0.35) 0px -2px 6px 0px inset;
 }
 
 .sidebar-upload:hover{
-    background-color: rgb(5, 172, 172);
+    background-color: white;
+    color: #ee991b;
     transition: 1s;
     transform: rotateX(360deg);
 }
@@ -125,18 +138,21 @@
     text-align: center;
     align-items: center;
     font-weight: bolder;
-    padding-left: 32px;
-    padding-top: 30px;
+    padding-left: 28px;
+    padding-top: 28px;
     font-size: 30px;
     font-weight: bolder;
     margin-left: 50px;
     border-radius: 50%;
     margin-left: 70px;
-    box-shadow: rgba(0, 0, 255, 0.25) 0px 50px 100px -20px, rgba(0, 119, 255, 0.3) 0px 30px 60px -30px, rgba(0, 128, 255, 0.35) 0px -2px 6px 0px inset;
+    border: 5px solid white;
+    color: white;
+    // box-shadow: rgba(0, 0, 255, 0.25) 0px 50px 100px -20px, rgba(0, 119, 255, 0.3) 0px 30px 60px -30px, rgba(0, 128, 255, 0.35) 0px -2px 6px 0px inset;
 }
 
 .sidebar-videos:hover{
-    background-color: rgb(82, 200, 251);
+    background-color: white;
+    color: #ee991b;
     transition: 1.5s;
     transform: rotateX(360deg);
 }
@@ -151,17 +167,25 @@
     font-weight: bolder;
     // border: 1px solid gray;
     border-top: 1px solid transparent;
+    background-color: #ee991b;
 }
 
-.sidebar-account>button{
+.signinbutton{
     width: 130px;
     height: 50px;
     border-radius: 5px;
-    color: white;
-    background-color: rgb(82, 200, 251);
+    color: #ee991b;
     text-align: center;
     align-items: center;
     font-weight: bolder;
     padding-left: 45px;
     font-size: 30px;
+}
+
+.signinbutton:hover{
+    background-color: #ee991b;
+    border: 1px solid white;
+    color: black;
+    transform: scale(1.025);
+    z-index: 1.5;
 }
