@@ -1,0 +1,48 @@
+.video{
+    height: 600px;
+    width: 100%;
+   cursor: pointer;
+    
+}
+.video>video{
+    width: 100%;
+    margin-top: 0;
+}
+.welcome{
+    position: absolute;
+    margin-top: -760px;
+    height: 320px;
+   
+    margin-left: 80px;
+    font-size: 160px;
+    font-family: "Lucida Console", "Courier New", monospace;
+  color: white;
+  
+
+}
+.chat{
+    position: absolute;
+    margin-top: -450px;
+    height: 320px;
+    
+    margin-left: 450px;
+    font-size: 160px;
+    // font-family: "Lucida Console", "Courier New", monospace;
+  color: white;
+}
+#name {
+  background: white;  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+// .btm{
+//   border: 1px solid;
+//   // margin-left: 580px;
+//   font-size: 80px;
+//   width: 100%;
+//   position: absolute;
+//       margin-top: -450px;
+//       background-color: white;
+//       color: black;
+// }
+
