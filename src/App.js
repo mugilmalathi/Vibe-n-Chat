@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.scss';
 import AllRoutes from './Components/AllRoutes/AllRoutes';
 
