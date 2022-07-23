@@ -30,7 +30,10 @@ body{
     margin-left: 300px;
     height: 100vh;
     // box-shadow: rgba(0, 180, 245, 0.25) 0px 50px 100px -20px, rgba(67, 152, 249, 0.3) 0px 30px 60px -30px, rgba(147, 196, 244, 0.35) 0px -2px 6px 0px inset;
-    border: 1px solid #ee991b;
+    // border: 1px solid #ee991b;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    overflow: hidden;
+    position: relative;
 }
 
 #colormode1{
@@ -118,6 +121,7 @@ body{
     justify-content: space-around;
     // box-shadow: rgba(165, 225, 247, 0.25) 0px 50px 100px -20px, rgba(67, 152, 249, 0.3) 0px 30px 60px -30px, rgba(147, 196, 244, 0.35) 0px -2px 6px 0px inset;
     border: 1px solid #ee991b;
+    border-top: none;
     border-left: none;
     border-right: none;
 }
@@ -129,9 +133,13 @@ body{
 
 .homepage-card3-down{
     // border: 1px solid indigo;
-    height: 610px;
-    // position:relative;
-    overflow:scroll;
+    height: 510px;
+    position: absolute;
+    top: -10;
+    left: 0;
+    bottom: -15px;
+    right: -20px; 
+    overflow: scroll;
 }
 
 .homepage-card3-down>div{
@@ -154,3 +162,50 @@ body{
     z-index: 1.5;
 }
 
+.profile-detail-option{
+
+    height: 100px;
+    border: 1px solid #ee991b;
+    border-top: none;
+    border-left: none;
+    display: flex;
+}
+
+.profile-detail-option>div:nth-child(1){
+
+    width: 40%;
+    height: 100px;
+    border: 1px solid #ee991b;
+    border-top: none;
+    border-left: none;
+}
+
+.profile-detail-option>div:nth-child(1)>img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-top: 12px;
+    margin-left: 5px;
+    border: 1px solid #ee991b;
+}
+
+.profile-detail-option>div:nth-child(2){
+
+    width: 60%;
+    height: 100px;
+    border: 1px solid #ee991b;
+    border-top: none;
+    border-left: none;
+}
+
+.profile-detail-option>div:nth-child(2)>h4{
+
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    color: #ee991b;
+    font-size: medium;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}

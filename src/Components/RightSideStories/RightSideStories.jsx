@@ -80,6 +80,12 @@ const RightSideStories = () => {
             </div>
 
           </div>
+
+          <div className='profile-detail-option'>
+            <div><img src="" alt="" /></div>
+            <div><h4>Dummy</h4></div>
+          </div>
+
           <div className='homepage-card3-down'>
             {videocards.map((e)=>{
               return(
@@ -87,6 +93,7 @@ const RightSideStories = () => {
               )
             })}
           </div>
+
     </div>
   )
 }
