@@ -11,7 +11,7 @@ import { FaLocationArrow } from "react-icons/fa";
 // import UserDetails from '../UserDetails/UserDetails';
 import RightSideStories from "../RightSideStories/RightSideStories";
 
-const Chat = () => {
+const Chats = () => {
   const [data, setData] = useState([]);
 
   //   useEffect(()=>{
@@ -105,4 +105,4 @@ const Chat = () => {
   );
 };
 
-export default Chat;
+export default Chats;
