@@ -1,60 +1,23 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Sidebar } from '../Sidebar/Sidebar'
 import "./Home.scss"
-import {
-  useColorMode
-} from '@chakra-ui/react'
+import axios from 'axios'
 
-import { BsFillBellFill } from "react-icons/bs";
-import { BsFillCloudMoonFill } from "react-icons/bs";
-import { BsFillPersonFill } from "react-icons/bs";
-import { BsFillSunFill } from "react-icons/bs";
+import UserDetails from '../UserDetails/UserDetails';
+import RightSideStories from '../RightSideStories/RightSideStories';
 
 const Home = () => {
 
-  const [color, setColor] = useState(null);
+  const[data, setData] = useState([]);
 
-  const {toggleColorMode} = useColorMode();
+  useEffect(()=>{
 
-  const handledarkmode = ()=>{
-
-    setColor(!color)
-  }
-
-  const videocards = [
-    {
-      name: "first"
-    },
-    {
-      name: "second"
-    },
-    {
-      name: "third"
-    },
-    {
-      name: "fourth"
-    },
-    {
-      name: "fifth"
-    },
-    {
-      name: "sixth"
-    },
-    {
-      name: "seventh"
-    },
-    {
-      name: "eight"
-    },
-    {
-      name: "ninth"
-    },
-    {
-      name: "tenth"
-    }
-  ]
-
-
+    axios.get("https://vibe-n-chat-backend.herokuapp.com/userdetails")
+    .then((e)=>{
+      setData(e.data)
+    })
+  }, [])
+  
   return (
     <div id="homepage">
 
@@ -63,31 +26,18 @@ const Home = () => {
         </div>
 
         <div className='homepage-card2'>
-          Home Content
+          {data.map((e)=>{
+            return(
+              <div>
+                <img src={e.profilepic} alt="" />
+                <h4>{e.firstName}</h4>
+              </div>
+            )
+          })}
         </div>
 
         <div className='homepage-card3'>
-          <div className='homepage-card3-top'>
-            <button id='colormode1'><BsFillBellFill /></button>
-            <div className='notification'>0</div>
-            <button id='colormode2' onClick={()=>{
-              handledarkmode()
-              toggleColorMode()
-            }}>{
-              color
-                ? <BsFillSunFill />
-                : <BsFillCloudMoonFill />
-            }
-            </button>
-            <button id='colormode3'><BsFillPersonFill /></button>
-          </div>
-          <div className='homepage-card3-down'>
-            {videocards.map((e)=>{
-              return(
-                <div style={{marginTop:"30px"}}>{e.name}</div>
-              )
-            })}
-          </div>
+          <RightSideStories />
         </div>
 
     </div>

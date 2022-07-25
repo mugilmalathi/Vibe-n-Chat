@@ -16,3 +16,11 @@ margin-top: -70px;
     padding: 20px 17px;
    
 }
+.container1{
+    // width: 100%;
+   
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100vh;
+}

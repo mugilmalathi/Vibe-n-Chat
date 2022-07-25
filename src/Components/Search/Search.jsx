@@ -1,7 +1,11 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { BsSearch } from "react-icons/bs";
+import RightSideStories from "../RightSideStories/RightSideStories";
+import { Sidebar } from "../Sidebar/Sidebar";
 import "./Search.scss";
+import "../Home/Home.scss"
+// import "../RightSideStories/RightSideStories.scss"
 
 const Search = () => {
   const [data, setData] = useState([]);
@@ -13,7 +17,11 @@ const Search = () => {
     });
   }, []);
   return (
-    <div>
+    <div className="container1">
+      <div className='homepage-card1'>
+          <Sidebar />
+        </div>
+      <div className='homepage-card2'>
       <div>
         <input
           className="in"
@@ -35,6 +43,10 @@ const Search = () => {
             return <div>{e.name}</div>
           })}
       </div>
+      </div>
+      <div className='homepage-card3'>
+      <RightSideStories />
+        </div>
     </div>
   );
 };
