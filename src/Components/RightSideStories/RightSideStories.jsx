@@ -7,7 +7,9 @@ import {
     useColorMode
   } from '@chakra-ui/react'
 import { Link } from 'react-router-dom';
-import "../Home/Home.scss"
+import "./RightSideStories.scss"
+
+import mugil from "../Images/mugil.jpg"
   
 
 const RightSideStories = () => {
@@ -80,13 +82,20 @@ const RightSideStories = () => {
             </div>
 
           </div>
+
+          <div className='profile-detail-option'>
+            <div><img src={mugil} alt="" /></div>
+            <div><h4>Mugil</h4></div>
+          </div>
+
           <div className='homepage-card3-down'>
             {videocards.map((e)=>{
               return(
-                <div style={{marginTop:"30px"}}>{e.name}</div>
+                <div className='block glow'>{e.name}</div>
               )
             })}
           </div>
+
     </div>
   )
 }

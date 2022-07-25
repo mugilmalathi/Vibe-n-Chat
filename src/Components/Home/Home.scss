@@ -2,7 +2,6 @@ body{
     margin: 0%;
 }
 
-
 #homepage{
     // border: 1px solid pink;
     display: grid;
@@ -30,7 +29,10 @@ body{
     margin-left: 300px;
     height: 100vh;
     // box-shadow: rgba(0, 180, 245, 0.25) 0px 50px 100px -20px, rgba(67, 152, 249, 0.3) 0px 30px 60px -30px, rgba(147, 196, 244, 0.35) 0px -2px 6px 0px inset;
-    border: 1px solid #ee991b;
+    // border: 1px solid #ee991b;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    overflow: hidden;
+    position: relative;
 }
 
 #colormode1{
@@ -118,6 +120,7 @@ body{
     justify-content: space-around;
     // box-shadow: rgba(165, 225, 247, 0.25) 0px 50px 100px -20px, rgba(67, 152, 249, 0.3) 0px 30px 60px -30px, rgba(147, 196, 244, 0.35) 0px -2px 6px 0px inset;
     border: 1px solid #ee991b;
+    border-top: none;
     border-left: none;
     border-right: none;
 }
@@ -127,30 +130,139 @@ body{
     margin-left: 20px;
 }
 
-.homepage-card3-down{
-    // border: 1px solid indigo;
-    height: 610px;
-    // position:relative;
-    overflow:scroll;
-}
+// .homepage-card3-down{
+//     // border: 1px solid indigo;
+//     height: 510px;
+//     position: absolute;
+//     top: -10;
+//     left: 0;
+//     bottom: -15px;
+//     right: -20px; 
+//     overflow: scroll;
+// }
 
-.homepage-card3-down>div{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
+// .homepage-card3-down>div{
+//     width: 80px;
+//     height: 80px;
+//     border-radius: 50%;
+//     margin: auto;
+//     text-align: center;
+//     padding-top: 25px;
+//     font-weight: bolder;
+//     border: 5px solid #ee991b;
+//     // box-shadow: rgba(0, 0, 255, 0.25) 0px 50px 100px -20px, rgba(0, 119, 255, 0.3) 0px 30px 60px -30px, rgba(0, 128, 255, 0.35) 0px -2px 6px 0px inset;
+//     cursor: pointer;
+//     scroll-behavior: smooth;
+// }
+
+// .homepage-card3-down>div:hover{
+//     // background-color: #ee991b;
+//     transform: scale(1.1);
+//     z-index: 1.5;
+// }
+
+.posts-particular{
+
+    width: 450px;
     margin: auto;
-    text-align: center;
-    padding-top: 25px;
-    font-weight: bolder;
-    border: 5px solid #ee991b;
-    // box-shadow: rgba(0, 0, 255, 0.25) 0px 50px 100px -20px, rgba(0, 119, 255, 0.3) 0px 30px 60px -30px, rgba(0, 128, 255, 0.35) 0px -2px 6px 0px inset;
+    height: 100%;
+    // border: 1px solid #ee991b;
+}
+
+#post-content{
+    width: 100%;
+    height: 250PX;
+    // border: 1px solid teal;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+#post-content>img{
+    width: 100%;
+    height: 250PX;
+    // border: 1px solid teal;
+    // box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+#like-share-comment{
+    width: 100%;
+    height: 50px;
+    // border: 1px solid indigo;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
     cursor: pointer;
-    scroll-behavior: smooth;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
-.homepage-card3-down>div:hover{
-    // background-color: #ee991b;
-    transform: scale(1.1);
-    z-index: 1.5;
+.comment-input{
+
+    width: 100%;
+    height: 55px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    margin-top: 5px;
 }
 
+.comment-input>input{
+    width: 70%;
+    height: 45px;
+    margin-top: 3px;
+    border: 1px solid rgb(220, 215, 215);
+    border-radius: 5px;
+}
+
+.comment-input>button{
+    width: 25%;
+    margin-left: 10px;
+    height: 43px;
+    background-color: #ee991b;
+    border: 1px solid #ee991b;
+    color: white;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: small;
+    letter-spacing: 3px;
+    
+}
+
+.comment-input>button:hover{
+    background-color: white;
+    color: #ee991b;
+}
+
+.showpost-container{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    height: 120px;
+    overflow-y: scroll;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.showpost-container::-webkit-scrollbar{
+    display: none;
+}
+
+#showpost-comment{
+
+    width: 100%;
+    height: 60px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+#showpost-comment>p{
+    padding-left: 30px;
+    text-align: left;
+    font-weight: bolder;
+    color: #ee991b;
+}
+#showpost-comment>h4{
+    padding-left: 30px;
+    text-align: left;
+    font-weight: bolder;
+    color: gray;
+    font-size: small;
+}

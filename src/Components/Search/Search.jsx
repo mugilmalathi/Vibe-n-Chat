@@ -5,7 +5,7 @@ import RightSideStories from "../RightSideStories/RightSideStories";
 import { Sidebar } from "../Sidebar/Sidebar";
 import "./Search.scss";
 import "../Home/Home.scss"
-// import "../RightSideStories/RightSideStories.scss"
+import "../RightSideStories/RightSideStories.scss"
 
 const Search = () => {
   const [data, setData] = useState([]);
