@@ -16,17 +16,6 @@ import UserDetails from '../UserDetails/UserDetails'
 const AllRoutes = () => {
   return (
     <div>
-<<<<<<< HEAD
-
-      <Routes>
-        <Route path="/" element={<HomeAnimation />} />
-        <Route path="/home" element={<Home />} />
-        <Route path='/account' element={<Signin />} />
-        <Route path='/search' element={<Search/>} />
-      </Routes>
-
-     
-=======
         <Routes>
           <Route path="/" element={<HomeAnimation />} />
           <Route path="/signin" element={<Signin />} />
@@ -34,8 +23,9 @@ const AllRoutes = () => {
           <Route path="/chats" element={<Chats />} />
           <Route path='/signup' element={<Signup />} />
           <Route path="/userdetails" element={<UserDetails />} />
+          <Route path='/search' element={<Search/>} />
         </Routes>
->>>>>>> 78775600d8256ad54b67396c5ee41805da7553cf
+
     </div>
   )
 }
