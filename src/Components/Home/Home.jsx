@@ -15,10 +15,8 @@ const Home = () => {
   const [formData, setFormData] = useState({
     comment:""
 });
-
   const[data, setData] = useState([]);
   const[commentdata, setCommentdata] = useState([]);
-
   const[like, setLike] = useState(null);
   const[likecount, setLikecount] = useState(null);
   const[comment, setComment] = useState(null);
