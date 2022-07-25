@@ -25,9 +25,6 @@ const Signin = () => {
 
   return (
     <div>
-      {/* <Link to="/">
-        <button>Home</button>
-      </Link> */}
 
       <div>
         <Button className="signinbutton" onClick={onOpen}>Signin</Button>

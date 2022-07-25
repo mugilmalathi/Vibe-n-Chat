@@ -25,15 +25,8 @@ const Signup = () => {
 
   return (
     <div>
-
       <div>
-
       <p onClick={onOpen}>Don't have account? <span>Click here</span></p>
-        
-        {/* <Button ml={4} ref={finalRef}>
-        Hospital
-      </Button> */}
-
         <Modal
           initialFocusRef={initialRef}
           finalFocusRef={finalRef}
@@ -92,7 +85,6 @@ const Signup = () => {
                 />
               </FormControl>
             </ModalBody>
-
             <ModalFooter>
               <Link to={'/'}><Button colorScheme="blue" ml={5}>
                 Sign Up
