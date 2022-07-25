@@ -1,0 +1,26 @@
+.search{
+font-weight: bolder;
+padding-left: 32px;
+padding-top: 30px;
+font-size: 30px;
+margin-left: 560px;
+position: absolute;
+margin-top: -70px;
+}
+.in{
+    margin-top: 20px;
+    border: 2px solid;
+    border-radius: 7px;
+    width: 30%;
+    height: 50px;
+    padding: 20px 17px;
+   
+}
+.container1{
+    // width: 100%;
+   
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100vh;
+}
