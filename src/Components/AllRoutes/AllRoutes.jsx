@@ -8,7 +8,9 @@ import HomeAnimation from '../HomeAnimation/HomeAnimation'
 import Search from '../Search/Search'
 import UserDetails from '../UserDetails/UserDetails'
 import Uploads from '../Uploads/Uploads'
+
 import FileUpload from '../FileUpload/FileUpload'
+
 
 
 const AllRoutes = () => {
@@ -23,7 +25,10 @@ const AllRoutes = () => {
           <Route path="/userdetails" element={<UserDetails />} />
           <Route path='/search' element={<Search/>} />
           <Route path='/upload' element={<Uploads/>} />
+
           <Route path='/fileupload' element={<FileUpload/>} />
+
+
         </Routes>
 
     </div>
