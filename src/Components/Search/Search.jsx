@@ -8,14 +8,14 @@ import "../Home/Home.scss"
 import "../RightSideStories/RightSideStories.scss"
 
 const Search = () => {
-  const [data, setData] = useState([]);
-  const [search, setSearch] = useState("");
+  // const [data, setData] = useState([]);
+  // const [search, setSearch] = useState("");
 
-  useEffect(() => {
-    axios.get("http://localhost:8080/SearchData").then((res) => {
-      setData(res.data);
-    });
-  }, []);
+  // useEffect(() => {
+  //   axios.get("http://localhost:8080/SearchData").then((res) => {
+  //     setData(res.data);
+  //   });
+  // }, []);
   return (
     <div className="container1">
       <div className='homepage-card1'>
@@ -27,9 +27,9 @@ const Search = () => {
           className="in"
           type="text"
           placeholder="Search something"
-          onChange={(e) => {
-            setSearch(e.target.value);
-          }}
+          // onChange={(e) => {
+          //   setSearch(e.target.value);
+          // }}
         />
         <div className="search">
           <BsSearch />
@@ -37,11 +37,11 @@ const Search = () => {
       </div>
 
       <div>
-        {data
+        {/* {data
           .filter((gro) => gro.name.toLowerCase().includes(search))
           .map((e) => {
             return <div>{e.name}</div>
-          })}
+          })} */}
       </div>
       </div>
       <div className='homepage-card3'>

@@ -136,6 +136,7 @@
 //     scroll-behavior: smooth;
 // }
 
+
 .block{
     position: relative;
     margin: 10% auto 0;
@@ -156,7 +157,8 @@
     border-radius: 50%;
     left: -2px;
     top: -2px;
-    background: linear-gradient(45deg, #299fff, #ee991b, #1eff1e);
+    background: linear-gradient(45deg, #ee991b, #f0ff4a, #c65300, #ff365b,
+    #fc0dcc, #04ff00);
     // background-size: 400%;
     width: calc(100% + 5px);
     height: calc(100% + 5px);

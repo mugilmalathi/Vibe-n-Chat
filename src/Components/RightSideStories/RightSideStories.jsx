@@ -91,7 +91,7 @@ const RightSideStories = () => {
           <div className='homepage-card3-down'>
             {videocards.map((e)=>{
               return(
-                <div className='block glow'>{e.name}</div>
+                <div className='block glow cardss'>{e.name}</div>
               )
             })}
           </div>
