@@ -11,8 +11,9 @@ const Search = () => {
   const [data, setData] = useState([]);
   const [search, setSearch] = useState("");
 
+
   useEffect(() => {
-    axios.get("http://localhost:8080/SearchData").then((res) => {
+    axios.get("https://vibe-n-chat-backend.herokuapp.com/search").then((res) => {
       setData(res.data);
     });
   }, []);
@@ -26,7 +27,7 @@ const Search = () => {
         <input
           className="in"
           type="text"
-          placeholder="Search something"
+          placeholder="Search something..."
           onChange={(e) => {
             setSearch(e.target.value);
           }}
@@ -36,11 +37,17 @@ const Search = () => {
         </div>
       </div>
 
-      <div>
+      <div className="search-container-maindiv" style={{display:"grid", gridTemplateColumns:"repeat(4, 1fr)", marginTop:"50px"}}>
         {data
           .filter((gro) => gro.name.toLowerCase().includes(search))
           .map((e) => {
-            return <div>{e.name}</div>
+            return(
+             <div className="search-container">
+              <h4>{e.name}</h4>
+              <p>{e.username}</p>
+              <p>{e.DOB}</p>
+             </div>
+            )
           })}
       </div>
       </div>

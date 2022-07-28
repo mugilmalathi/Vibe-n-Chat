@@ -53,13 +53,13 @@ const UserDetails = () => {
             <div id='userdetail-container'>
 
                 <div className='userdetail-imgsection'>
-                    <input 
+                    {/* <input 
                       id='profilepic' 
                       type="file" 
                       accept='image/*'
                       onChange={handleChange}
                       value={formData.profilepic}
-                      />
+                      /> */}
                     <div className='userdetail-namesection'>
                         <input 
                           id='firstName' 
