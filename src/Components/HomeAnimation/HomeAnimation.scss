@@ -1,27 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@700&display=swap');
 
 .video{
-    height: 600px;
+    height: 713px;
     width: 100%;
    cursor: pointer;
+   background-color: #ee991b;
+   overflow-y: hidden;
     
 }
 .video>video{
-    width: 100%;
+    margin: auto;
     margin-top: 0;
+    overflow:hidden;
+    display:block;
 }
 .welcome{
+  display: flex;
     position: absolute;
     margin-top: -760px;
+    padding-left: 30px;
     height: 320px;
    font-weight: bolder;
     margin-left: 80px;
     font-size: 160px;
-    font-family: 'Alfa Slab One', cursive;
-  color: white;
-  
-
+    font-family: 'Edu VIC WA NT Beginner', cursive;
 }
+
+@import url(https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap);
+
+@keyframes bounce {
+    0%,20%,50%,80%,to {
+        transform: translateZ(-2px) translateY(5px)
+    }
+
+    40% {
+        transform: rotateY(180deg) translateZ(-2px) translateY(-35px)
+    }
+
+    60% {
+        transform: translateZ(-2px) translateY(-25px)
+    }
+};
+
+.welcome {
+    -webkit-animation: bounce 3s cubic-bezier(.37,0,.21,1.02) infinite,fonts 5s linear infinite;
+    animation: bounce 3s cubic-bezier(.37,0,.21,1.02) infinite,fonts 5s linear infinite;
+}
+
+.scroll-more {
+  color: white;
+ text-align: center;
+    position: absolute;
+    bottom: 8rem;
+    left: calc(50% - 225px);
+    margin: 0 auto;
+    font-size: 25rem;
+    opacity: 1;
+    transition: opacity .3s ease;
+    font-family: monospace;
+    pointer-events: none;
+    z-index: -1;
+    transform-origin: center;
+    -webkit-animation: bounce 3s cubic-bezier(.37,0,.21,1.02) infinite,fonts 5s linear infinite;
+    animation: bounce 3s cubic-bezier(.37,0,.21,1.02) infinite,fonts 5s linear infinite;
+}
+
+
 .chat{
     position: absolute;
     margin-top: -450px;
@@ -30,7 +75,7 @@
     margin-left: 250px;
     // text-align: center;
     font-size: 160px;
-    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
     // font-family: "Lucida Console", "Courier New", monospace;
   color: white;
 }

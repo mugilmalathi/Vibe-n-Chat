@@ -1,6 +1,6 @@
 import React from 'react'
 import "./HomeAnimation.scss"
-import video from "../Videos/cinematic.mp4"
+import video from "../Videos/homevideo.mp4"
 import { useNavigate } from 'react-router'
 import TypewriterComponent from 'typewriter-effect'
 import Typewriter from "typewriter-effect";
@@ -11,7 +11,7 @@ const HomeAnimation = () => {
     <div className='video' onClick={()=>{
       navigate("home")
     }}>
-      <video src={video} type="video/mp4" autoPlay loop muted></video>
+      <video className='homeani-video' src={video} type="video/mp4" autoPlay loop muted></video>
       <div className='btm'>
       <h1 className='welcome' id="name">
       <Typewriter
@@ -23,6 +23,7 @@ const HomeAnimation = () => {
         deleteSpeed: 50,
       }}
     />
+    <span className='scroll-more'>↓</span>
     </h1>
       
       <br />

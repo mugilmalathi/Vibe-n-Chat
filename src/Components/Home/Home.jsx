@@ -18,7 +18,7 @@ const Home = () => {
   const[data, setData] = useState([]);
   const[commentdata, setCommentdata] = useState([]);
   const[like, setLike] = useState(null);
-  const[likecount, setLikecount] = useState(null);
+  const[likecount, setLikecount] = useState(0);
   const[comment, setComment] = useState(null);
 
 const handleSubmitter = (e)=>{ 
@@ -44,7 +44,7 @@ const handleChange = (e)=>{
 
   const handleLike = ()=>{
     setLike(!like)
-    setLikecount(!likecount)
+    setLikecount(likecount+1)
   }
 
   const handleComment = ()=>{
@@ -83,6 +83,9 @@ const handleChange = (e)=>{
           <div className='posts-particular'>
 
             <div id='post-content'><img src="https://cdn.chiroeco.com/wp-content/uploads/2020/10/AdobeStock_313597954-scaled.jpeg" alt="NA" /></div>
+            {likecount===1
+            ?<div style={{textAlign:"left"}}><h4 style={{paddingLeft:"10px", color:"#ee991b"}}>{likecount} <span style={{color:"gray"}}>Likes</span></h4></div>
+            :<div style={{textAlign:"left"}}><h4 style={{paddingLeft:"10px", color:"#ee991b"}}>0 <span style={{color:"gray"}}>Likes</span></h4></div>}
             <div id='like-share-comment'>
             <FaThumbsUp style={{color: like ? "#ee991b" : "#1a202c"}} onClick={handleLike}/>
             <FaCommentAlt onClick={handleComment}/>

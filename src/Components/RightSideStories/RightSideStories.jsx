@@ -25,34 +25,44 @@ const RightSideStories = () => {
 
     const videocards = [
         {
-          name: "first"
+          name: "first",
+          img:mugil
         },
         {
-          name: "second"
+          name: "second",
+          img:mugil
         },
         {
-          name: "third"
+          name: "third",
+          img:mugil
         },
         {
-          name: "fourth"
+          name: "fourth",
+          img:mugil
         },
         {
-          name: "fifth"
+          name: "fifth",
+          img:mugil
         },
         {
-          name: "sixth"
+          name: "sixth",
+          img:mugil
         },
         {
-          name: "seventh"
+          name: "seventh",
+          img:mugil
         },
         {
-          name: "eight"
+          name: "eight",
+          img:mugil
         },
         {
-          name: "ninth"
+          name: "ninth",
+          img:mugil
         },
         {
-          name: "tenth"
+          name: "tenth",
+          img:mugil
         }
       ]
 
