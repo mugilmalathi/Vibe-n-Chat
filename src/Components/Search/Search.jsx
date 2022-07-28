@@ -17,13 +17,6 @@ const Search = () => {
       setData(res.data);
     });
   }, []);
-
-  // useEffect(() => {
-  //   axios.get("http://localhost:8080/SearchData").then((res) => {
-  //     setData(res.data);
-  //   });
-  // }, []);
-
   return (
     <div className="container1">
       <div className='homepage-card1'>
@@ -34,23 +27,15 @@ const Search = () => {
         <input
           className="in"
           type="text"
-
           placeholder="Search something..."
           onChange={(e) => {
             setSearch(e.target.value);
           }}
-
-          placeholder="Search something"
-          // onChange={(e) => {
-          //   setSearch(e.target.value);
-          // }}
-
         />
         <div className="search">
           <BsSearch />
         </div>
       </div>
-
 
       <div className="search-container-maindiv" style={{display:"grid", gridTemplateColumns:"repeat(4, 1fr)", marginTop:"50px"}}>
         {data
@@ -64,20 +49,11 @@ const Search = () => {
              </div>
             )
           })}
-
-      <div>
-        {/* {data
-          .filter((gro) => gro.name.toLowerCase().includes(search))
-          .map((e) => {
-            return <div>{e.name}</div>
-          })} */}
-
       </div>
       </div>
       <div className='homepage-card3'>
       <RightSideStories />
         </div>
-    </div>
     </div>
   );
 };
